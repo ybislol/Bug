@@ -1,0 +1,439 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <windows.h>
+#include <string.h>
+#include <conio.h>
+#include <iostream>
+#include <time.h>
+
+
+void escolherclasse(){
+	printf("Agora voce deve escolher uma classe: ");
+	printf("\n");
+	printf("1.Barbaro\n2.Bardo\n3.Clerigo\n4.Druida\n5.Guerreiro\n6.Ladino\n7.Mago");
+	printf("\n\n");
+}
+
+
+void processo() {
+	printf("Processando.");
+	Sleep(1000);
+	printf(".");
+	Sleep(1000);
+	printf(".");
+	Sleep(1000);
+	printf(".");
+	Sleep(1000);
+	printf(".");
+	Sleep(1000);
+	printf(".");
+	Sleep(100);
+}
+
+
+void pular1linha() {
+	printf("\n");
+}
+
+
+void pular2linhas() {
+	printf("\n\n");
+}
+
+
+int main() {
+	int racca, classe;
+	char nome[200];
+
+	system("color a");
+
+
+	printf("Seja bem vindo a Aldora!!\n\n");
+	printf("Digite seu nome: \n");
+	fgets(nome, 200, stdin);
+	fflush(stdin);
+	processo();
+	system("cls");
+	printf("Ola, Senhor(a): %s", nome);
+	pular2linhas();
+	printf("Por faovor, escolha uma raca: ");
+	pular1linha();
+	printf("1.Anao\n2.Elfo\n3.Gnomo\n4.Humano\n5.Hobbit\n6.Meio-Orc\n7.Meio-Elfo");
+	pular2linhas();
+
+	scanf_s("%d", &racca);
+	processo();
+	system("cls");
+	printf("Ola, Senhor(a): %s", nome);
+	pular2linhas();   
+
+
+
+	switch (racca) {
+				case 1:
+					printf("Voce escolhou ser um(a) Anao!!");
+					pular2linhas();
+					escolherclasse();
+					scanf_s("%d", &classe);
+					processo();
+					system("cls");
+					printf("Ola, Senhor(a): %s", nome);
+					pular2linhas();
+						switch (classe){
+							case 1:
+								printf("Voce agora sera um(a) Anao Barbaro!!");
+								pular2linhas();
+								break;
+
+							case 2:
+								printf("Voce agora sera um(a) Anao Bardo!!");
+								pular2linhas();
+								break;
+
+							case 3:
+								printf("Voce agora sera um(a) Anao Clerigo!!");
+								pular2linhas();
+								break;
+
+							case 4:
+								printf("Voce agora sera um(a) Anao Druida!!");
+								pular2linhas();
+								break;
+
+							case 5:
+								printf("Voce agora sera um(a) Anao Guerreiro!!");
+								pular2linhas();
+								break;
+
+							case 6: 
+								printf("Voce agora sera um(a) Anao Ladino!!");
+								pular2linhas();
+								break;
+
+							case 7:
+								printf("Voce agora sera um(a) Anao Mago!!");
+								pular2linhas();
+								break;
+
+					 break;
+					default:
+						break;
+					}
+
+
+				case 2:
+					printf("Voce escolhou ser um(a) Elfo!!");
+					pular2linhas();
+					escolherclasse();
+					scanf_s("%d", &classe);
+					processo();
+					system("cls");
+					printf("Ola, Senhor(a): %s", nome);
+					pular2linhas();
+						switch (classe) {
+							case 1:
+								printf("Voce agora sera um(a) Elfo Barbaro!!");
+								pular2linhas();
+								break;
+
+							case 2:
+								printf("Voce agora sera um(a) Elfo Bardo!!");
+								pular2linhas();
+								break;
+
+							case 3:
+								printf("Voce agora sera um(a) Elfo Clerigo!!");
+								pular2linhas();
+								break;
+
+							case 4:
+								printf("Voce agora sera um(a) Elfo Druida!!");
+								pular2linhas();
+								break;
+
+							case 5:
+								printf("Voce agora sera um(a) Elfo Guerreiro!!");
+								pular2linhas();
+								break;
+
+							case 6:
+								printf("Voce agora sera um(a) Elfo Ladino!!");
+								pular2linhas();
+								break;
+
+							case 7:
+								printf("Voce agora sera um(a) Elfo Mago!!");
+								pular2linhas();
+								break;
+					 break;
+					default:
+						break;
+					}
+
+
+				case 3:
+					printf("Voce escolhou ser um(a) Gnomo!!");
+					pular2linhas(); 
+					escolherclasse();
+					scanf_s("%d", &classe);
+					processo();
+					system("cls");
+					printf("Ola, Senhor(a): %s", nome);
+					pular2linhas();
+						switch (classe) {
+							case 1:
+								printf("Voce agora sera um(a) Gnomo Barbaro!!");
+								pular2linhas();
+								break;
+
+							case 2:
+								printf("Voce agora sera um(a) Gnomo Bardo!!");
+								pular2linhas();
+								break;
+
+							case 3:
+								printf("Voce agora sera um(a) Gnomo Clerigo!!");
+								pular2linhas();
+								break;
+
+							case 4:
+								printf("Voce agora sera um(a) Gnomo Druida!!");
+								pular2linhas();
+								break;
+
+							case 5:
+								printf("Voce agora sera um(a) Gnomo Guerreiro!!");
+								pular2linhas();
+								break;
+
+							case 6:
+								printf("Voce agora sera um(a) Gnomo Ladino!!");
+								pular2linhas();
+								break;
+
+							case 7:
+								printf("Voce agora sera um(a) Gnomo Mago!!");
+								pular2linhas();
+								break;
+
+				     break;
+					default:
+						break;
+					}
+
+
+				case 4:
+						printf("Voce escolhou ser um(a) Humano!!");
+						pular2linhas();
+						escolherclasse();
+						scanf_s("%d", &classe);
+						processo();
+						system("cls");
+						printf("Ola, Senhor(a): %s", nome);
+						pular2linhas();
+							switch (classe) {
+								case 1:
+									printf("Voce agora sera um(a) Humano Barbaro!!");
+									pular2linhas();
+									break;
+
+								case 2:
+									printf("Voce agora sera um(a) Humano Bardo!!");
+									pular2linhas();
+									break;
+
+								case 3:
+									printf("Voce agora sera um(a) Humano Clerigo!!");
+									pular2linhas();
+									break;
+
+								case 4:
+									printf("Voce agora sera um(a) Humano Druida!!");
+									pular2linhas();
+									break;
+
+								case 5:
+									printf("Voce agora sera um(a) Humano Guerreiro!!");
+									pular2linhas();
+									break;
+
+								case 6:
+									printf("Voce agora sera um(a) Humano Ladino!!");
+									pular2linhas();
+									break;
+
+								case 7:
+									printf("Voce agora sera um(a) Humano Mago!!");
+									pular2linhas();
+									break;
+
+					     break;
+						default:
+							break;
+						}
+
+				case 5:
+					printf("Voce escolhou ser um(a) Hobbit!!");
+					pular2linhas();
+					escolherclasse();
+					scanf_s("%d", &classe);
+					processo();
+					system("cls");
+					printf("Ola, Senhor(a): %s", nome);
+					pular2linhas();
+						switch (classe) {
+							case 1:
+								printf("Voce agora sera um(a) Hobbit Barbaro!!");
+								pular2linhas();
+								break;
+
+							case 2:
+								printf("Voce agora sera um(a) Hobbit Bardo!!");
+								pular2linhas();
+								break;
+
+							case 3:
+								printf("Voce agora sera um(a) Hobbit Clerigo!!");
+								pular2linhas();
+								break;
+
+							case 4:
+								printf("Voce agora sera um(a) Hobbit Druida!!");
+								pular2linhas();
+								break;
+
+							case 5:
+								printf("Voce agora sera um(a) Hobbit Guerreiro!!");
+								pular2linhas();
+								break;
+
+							case 6:
+								printf("Voce agora sera um(a) Hobbit Ladino!!");
+								pular2linhas();
+								break;
+
+							case 7:
+								printf("Voce agora sera um(a) Hobbit Mago!!");
+								pular2linhas();
+								break;
+
+			   		 break;
+					default:
+						break;
+					}
+
+
+				case 6:
+					printf("Voce escolhou ser um(a) Meio-Orc!!");
+					pular2linhas();
+					escolherclasse();
+					scanf_s("%d", &classe);
+					processo();
+					system("cls");
+					printf("Ola, Senhor(a): %s", nome);
+					pular2linhas();
+						switch (classe) {
+							case 1:
+								printf("Voce agora sera um(a) Meio-Orc Barbaro!!");
+								pular2linhas();
+								break;
+
+							case 2:
+								printf("Voce agora sera um(a) Meio-Orc Bardo!!");
+								pular2linhas();
+								break;
+
+							case 3:
+								printf("Voce agora sera um(a) Meio-Orc Clerigo!!");
+								pular2linhas();
+								break;
+
+							case 4:
+								printf("Voce agora sera um(a) Meio-Orc Druida!!");
+								pular2linhas();
+								break;
+
+							case 5:
+								printf("Voce agora sera um(a) Meio-Orc Guerreiro!!");
+								pular2linhas();
+								break;
+
+							case 6:
+								printf("Voce agora sera um(a) Meio-Orc Ladino!!");
+								pular2linhas();
+								break;
+
+							case 7:
+								printf("Voce agora sera um(a) Meio-Orc Mago!!");
+								pular2linhas();
+								break;
+
+					 break;
+					default:
+						break;
+					}
+
+
+				case 7:
+					printf("Voce escolhou ser um(a) Meio-Elfo!!");
+					pular2linhas();
+					escolherclasse();
+					scanf_s("%d", &classe);
+					processo();
+					system("cls");
+					printf("Ola, Senhor(a): %s", nome);
+					pular2linhas();
+						switch (classe) {
+							case 1:
+								printf("Voce agora sera um(a) Meio-Elfo Barbaro!!");
+								pular2linhas();
+								break;
+
+							case 2:
+								printf("Voce agora sera um(a) Meio-Elfo Bardo!!");
+								pular2linhas();
+								break;
+
+							case 3:
+								printf("Voce agora sera um(a) Meio-Elfo Clerigo!!");
+								pular2linhas();
+								break;
+
+							case 4:
+								printf("Voce agora sera um(a) Meio-Elfo Druida!!");
+								pular2linhas();
+								break;
+
+							case 5:
+								printf("Voce agora sera um(a) Meio-Elfo Guerreiro!!");
+								pular2linhas();
+								break;
+
+							case 6:
+								printf("Voce agora sera um(a) Meio-Elfo Ladino!!");
+								pular2linhas();
+								break;
+
+							case 7:
+								printf("Voce agora sera um(a) Meio-Elfo Mago!!");
+								pular2linhas();
+								break;
+
+				   	 break;
+					default:
+						break;
+					}
+
+
+
+	default:
+		break;
+	}
+
+
+
+	Sleep(1000);
+	system("pause");
+
+}
+
