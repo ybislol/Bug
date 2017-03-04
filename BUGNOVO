@@ -1,0 +1,655 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <windows.h>
+#include <string.h>
+#include <conio.h>
+#include <iostream>
+#include <time.h>
+
+
+void escolherclasse(){
+	printf("Agora voce deve escolher uma classe: ");
+	printf("\n");
+	printf("1.Barbaro\n2.Bardo\n3.Clerigo\n4.Druida\n5.Guerreiro\n6.Ladino\n7.Mago");
+	printf("\n\n");
+} 
+/*Função para escolher uma classe*/
+
+
+void processo() {
+	printf("Processando.");
+	Sleep(1000);
+	printf(".");
+	Sleep(1000);
+	printf(".");
+	Sleep(1000);
+	printf(".");
+	Sleep(1000);
+	printf(".");
+	Sleep(1000);
+	printf(".");
+	Sleep(100);
+}
+/*Função para dar "processando..."*/
+
+
+void pular1linha() {
+	printf("\n");
+}
+/*Função para pular uma linha (preguiça de por \n nos printf*/
+
+
+void pular2linhas() {
+	printf("\n\n");
+}
+/*Função para pular duas linhas*/
+
+
+void delay1() {
+	Sleep(1000);
+}
+/*Função para dar um delay de 1s*/
+
+
+void delay2() {
+	Sleep(2000);
+}
+/*Função para dar um delay de 2s*/
+
+
+int main() { //The Game
+	int racca, classe;
+	char nome[200]; //Nick
+
+	system("color a");
+
+
+	printf("Seja bem vindo a Aldora!!\n\n");
+	printf("Digite seu nome: \n");
+	fgets(nome, 200, stdin);
+	fflush(stdin);
+	processo();
+	system("cls");
+	printf("Ola, Senhor(a): %s", nome);
+	pular2linhas();
+	printf("Por favor, escolha uma raca: ");
+	pular1linha();
+	printf("1.Anao\n2.Elfo\n3.Gnomo\n4.Humano\n5.Hobbit\n6.Meio-Orc\n7.Meio-Elfo\n\n100.Me tire daqui!!!");
+	pular2linhas();
+
+	scanf_s("%d", &racca);
+	processo();
+	system("cls");
+	printf("Ola, Senhor(a): %s", nome);
+	pular2linhas();   
+
+
+	switch (racca) { ;
+				case 1: //Anao
+					printf("Voce escolhou ser um(a) Anao!!");
+					pular2linhas();
+					escolherclasse();
+					scanf_s("%d", &classe);
+					processo();
+					system("cls");
+					printf("Ola, Senhor(a): %s", nome);
+					pular2linhas();
+
+
+						switch (classe){
+							case 1:
+								printf("Voce agora sera um(a) Anao Barbaro!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								printf("");
+								pular2linhas();
+								break;
+
+							case 2:
+								printf("Voce agora sera um(a) Anao Bardo!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 3:
+								printf("Voce agora sera um(a) Anao Clerigo!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 4:
+								printf("Voce agora sera um(a) Anao Druida!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 5:
+								printf("Voce agora sera um(a) Anao Guerreiro!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 6: 
+								printf("Voce agora sera um(a) Anao Ladino!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 7:
+								printf("Voce agora sera um(a) Anao Mago!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+					 break;
+					default:
+						break;
+					}
+						break;
+
+				case 2: //Elfo
+					printf("Voce escolhou ser um(a) Elfo!!");
+					pular2linhas();
+					escolherclasse();
+					scanf_s("%d", &classe);
+					processo();
+					system("cls");
+					printf("Ola, Senhor(a): %s", nome);
+					pular2linhas();
+						switch (classe) {
+							case 1:
+								printf("Voce agora sera um(a) Elfo Barbaro!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 2:
+								printf("Voce agora sera um(a) Elfo Bardo!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 3:
+								printf("Voce agora sera um(a) Elfo Clerigo!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 4:
+								printf("Voce agora sera um(a) Elfo Druida!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 5:
+								printf("Voce agora sera um(a) Elfo Guerreiro!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 6:
+								printf("Voce agora sera um(a) Elfo Ladino!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 7:
+								printf("Voce agora sera um(a) Elfo Mago!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+					 break;
+					default:
+						break;
+					}
+
+
+				case 3: //Gnomo
+					printf("Voce escolhou ser um(a) Gnomo!!");
+					pular2linhas(); 
+					escolherclasse();
+					scanf_s("%d", &classe);
+					processo();
+					system("cls");
+					printf("Ola, Senhor(a): %s", nome);
+					pular2linhas();
+						switch (classe) {
+							case 1:
+								printf("Voce agora sera um(a) Gnomo Barbaro!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 2:
+								printf("Voce agora sera um(a) Gnomo Bardo!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 3:
+								printf("Voce agora sera um(a) Gnomo Clerigo!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 4:
+								printf("Voce agora sera um(a) Gnomo Druida!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 5:
+								printf("Voce agora sera um(a) Gnomo Guerreiro!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 6:
+								printf("Voce agora sera um(a) Gnomo Ladino!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 7:
+								printf("Voce agora sera um(a) Gnomo Mago!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+				     break;
+					default:
+						break;
+					}
+
+
+				case 4: //Humano
+						printf("Voce escolhou ser um(a) Humano!!");
+						pular2linhas();
+						escolherclasse();
+						scanf_s("%d", &classe);
+						processo();
+						system("cls");
+						printf("Ola, Senhor(a): %s", nome);
+						pular2linhas();
+							switch (classe) {
+								case 1:
+									printf("Voce agora sera um(a) Humano Barbaro!!");
+									delay2();
+									system("cls");
+									printf("%s LvL: 1 - EXP 0/150", nome);
+									pular1linha();
+									pular2linhas();
+									break;
+
+								case 2:
+									printf("Voce agora sera um(a) Humano Bardo!!");
+									delay2();
+									system("cls");
+									printf("%s LvL: 1 - EXP 0/150", nome);
+									pular1linha();
+									pular2linhas();
+									break;
+
+								case 3:
+									printf("Voce agora sera um(a) Humano Clerigo!!");
+									delay2();
+									system("cls");
+									printf("%s LvL: 1 - EXP 0/150", nome);
+									pular1linha();
+									pular2linhas();
+									break;
+
+								case 4:
+									printf("Voce agora sera um(a) Humano Druida!!");
+									delay2();
+									system("cls");
+									printf("%s LvL: 1 - EXP 0/150", nome);
+									pular1linha();
+									pular2linhas();
+									break;
+
+								case 5:
+									printf("Voce agora sera um(a) Humano Guerreiro!!");
+									delay2();
+									system("cls");
+									printf("%s LvL: 1 - EXP 0/150", nome);
+									pular1linha();
+									pular2linhas();
+									break;
+
+								case 6:
+									printf("Voce agora sera um(a) Humano Ladino!!");
+									delay2();
+									system("cls");
+									printf("%s LvL: 1 - EXP 0/150", nome);
+									pular1linha();
+									pular2linhas();
+									break;
+
+								case 7:
+									printf("Voce agora sera um(a) Humano Mago!!");
+									delay2();
+									system("cls");
+									printf("%s LvL: 1 - EXP 0/150", nome);
+									pular1linha();
+									pular2linhas();
+									break;
+
+					     break;
+						default:
+							break;
+						}
+
+				case 5: //Hobbit
+					printf("Voce escolhou ser um(a) Hobbit!!");
+					pular2linhas();
+					escolherclasse();
+					scanf_s("%d", &classe);
+					processo();
+					system("cls");
+					printf("Ola, Senhor(a): %s", nome);
+					pular2linhas();
+						switch (classe) {
+							case 1:
+								printf("Voce agora sera um(a) Hobbit Barbaro!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 2:
+								printf("Voce agora sera um(a) Hobbit Bardo!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 3:
+								printf("Voce agora sera um(a) Hobbit Clerigo!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 4:
+								printf("Voce agora sera um(a) Hobbit Druida!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 5:
+								printf("Voce agora sera um(a) Hobbit Guerreiro!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 6:
+								printf("Voce agora sera um(a) Hobbit Ladino!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 7:
+								printf("Voce agora sera um(a) Hobbit Mago!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+			   		 break;
+					default:
+						break;
+					}
+
+
+				case 6: //Meio Orc
+					printf("Voce escolhou ser um(a) Meio-Orc!!");
+					pular2linhas();
+					escolherclasse();
+					scanf_s("%d", &classe);
+					processo();
+					system("cls");
+					printf("Ola, Senhor(a): %s", nome);
+					pular2linhas();
+						switch (classe) {
+							case 1:
+								printf("Voce agora sera um(a) Meio-Orc Barbaro!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 2:
+								printf("Voce agora sera um(a) Meio-Orc Bardo!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 3:
+								printf("Voce agora sera um(a) Meio-Orc Clerigo!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 4:
+								printf("Voce agora sera um(a) Meio-Orc Druida!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 5:
+								printf("Voce agora sera um(a) Meio-Orc Guerreiro!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 6:
+								printf("Voce agora sera um(a) Meio-Orc Ladino!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 7:
+								printf("Voce agora sera um(a) Meio-Orc Mago!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+					 break;
+					default:
+						break;
+					}
+
+
+				case 7: //Meio Elfo
+					printf("Voce escolhou ser um(a) Meio-Elfo!!");
+					pular2linhas();
+					escolherclasse();
+					scanf_s("%d", &classe);
+					processo();
+					system("cls");
+					printf("Ola, Senhor(a): %s", nome);
+					pular2linhas();
+						switch (classe) {
+							case 1:
+								printf("Voce agora sera um(a) Meio-Elfo Barbaro!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 2:
+								printf("Voce agora sera um(a) Meio-Elfo Bardo!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 3:
+								printf("Voce agora sera um(a) Meio-Elfo Clerigo!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 4:
+								printf("Voce agora sera um(a) Meio-Elfo Druida!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 5:
+								printf("Voce agora sera um(a) Meio-Elfo Guerreiro!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 6:
+								printf("Voce agora sera um(a) Meio-Elfo Ladino!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+							case 7:
+								printf("Voce agora sera um(a) Meio-Elfo Mago!!");
+								delay2();
+								system("cls");
+								printf("%s LvL: 1 - EXP 0/150", nome);
+								pular1linha();
+								pular2linhas();
+								break;
+
+				   	 break;
+					default:
+						break;
+					}
+
+
+				case 100: //Para sair
+					printf("Nao volte mais aqui!!!");
+					delay2();
+					exit(0);
+					break;
+
+	default:
+		break;
+	}
+
+	Sleep(1000);
+	system("pause");
+
+} //Main
